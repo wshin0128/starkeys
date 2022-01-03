@@ -12,6 +12,8 @@ const NavbarWrap = styled.div`
 const StyledNavbar = styled.div`
     padding: 30px 0;
     color: white;
+    position: sticky;
+    top: 0;
 
     h1 {
         display: inline-block;

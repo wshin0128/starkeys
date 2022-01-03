@@ -1,5 +1,6 @@
 body {
   margin: 0;
   font-family: Hevetica, sans-serif;
-  background-color: #19313d;
+  background: linear-gradient(135deg, black, #150d37);
+  background-color: #150d37;
 }
