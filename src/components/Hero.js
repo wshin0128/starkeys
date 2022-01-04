@@ -68,13 +68,14 @@ const NFTcard = styled.div`
 
     #nft-img {
         width: 500px;
-        height: 500px;
+        height: 600px;
         background-size: cover;
         background-position: center;
         background-image: url("https://i.redd.it/jfgm9yrvtxt71.jpg");
         // background-image: url("https://lh3.googleusercontent.com/QgfVXQ3STb2G8uuPV5AeDk3rvlQYtXXOJq2zvTlIFUmUMLfnNI7hxyTnuPz54jt0a7hoN2_U-okRJfofGkTvo3AiKCYZFoIJc6lyRCA=w600");
-        border-radius: 10px 10px 0 0;
-        filter: brightness(0.8);
+        border-radius: 10px;
+        background-image: url("https://cdn.dribbble.com/users/35874/screenshots/15254023/media/7f730cde9eb3b9be76aac9bec62e2f4d.gif");
+        // filter: brightness(0.8);
     }
 
     #nft-info {
@@ -116,13 +117,13 @@ const Hero = () => {
                 <HeroContainer>
                     <div id="hero-left">
                         <h2>The <span>#1 NFT Agency</span> for Influencers</h2>
-                        <StyledButton href="https://www.google.com" target="_blank">Schedule a free consultation</StyledButton>
+                        <StyledButton href="https://calendly.com/starkeys-io" target="_blank">Schedule a free consultation</StyledButton>
                     </div>
 
                     <div id="hero-right">
                         <NFTcard>
                             <div id="nft-img"></div>
-                            <div id="nft-info">
+                            {/* <div id="nft-info">
                                 <div id="current-bid">
                                     <h5>Current Bid</h5>
                                     <p>3.00 ETH</p>
@@ -131,7 +132,7 @@ const Hero = () => {
                                     <h5>Ends In</h5>
                                     <p>12<span className="timeLabel">H</span> 34<span className="timeLabel">M</span> 56<span className="timeLabel">S</span></p>
                                 </div>
-                            </div>
+                            </div> */}
                         </NFTcard>
                     </div>
                 </HeroContainer>

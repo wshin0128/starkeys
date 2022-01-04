@@ -14,6 +14,8 @@ const StyledNavbar = styled.div`
     color: white;
     position: sticky;
     top: 0;
+    z-index: 1;
+    background: linear-gradient(135deg,black,#100b28);
 
     h1 {
         display: inline-block;
@@ -24,6 +26,8 @@ const StyledNavbar = styled.div`
         font-size: 1.2em;
         display: inline-block;
         margin-left: 40px;
+        text-decoration: none;
+        color: white;
     }
     #page-1 {
         margin-left: auto;
@@ -35,8 +39,9 @@ const Navbar = () => {
         <StyledNavbar>
             <NavbarWrap>
                 <h1>StarKeys</h1>
-                <a id="page-1">Why NFTs?</a>
-                <a>Why StaKeys?</a>
+                <a id="page-1" href="#why-nfts">Why NFTs?</a>
+                <a>Why StarKeys?</a>
+                <a href="https://536xix53qb2.typeform.com/to/STWYao7g">Contact Us</a>
             </NavbarWrap>
         </StyledNavbar>
     )
