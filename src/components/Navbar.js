@@ -4,7 +4,7 @@ import styled from "styled-components"
 const NavbarWrap = styled.div`
     max-width: 90em;
     margin: 0 auto;
-    padding: 0 1.5em;
+    padding: 0 6em;
     display: flex;
     align-items: center;
 `
@@ -18,6 +18,7 @@ const StyledNavbar = styled.div`
     background: linear-gradient(135deg,black,#100b28);
 
     h1 {
+        user-select: none;
         display: inline-block;
         font-weight: 500;
         margin: 0;
@@ -40,7 +41,7 @@ const Navbar = () => {
             <NavbarWrap>
                 <h1>StarKeys</h1>
                 <a id="page-1" href="#why-nfts">Why NFTs?</a>
-                <a>Why StarKeys?</a>
+                <a href="#last">Why StarKeys?</a>
                 <a href="https://536xix53qb2.typeform.com/to/STWYao7g">Contact Us</a>
             </NavbarWrap>
         </StyledNavbar>

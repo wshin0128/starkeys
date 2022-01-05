@@ -2,18 +2,17 @@ import * as React from "react"
 import styled from "styled-components"
 
 const StyledSection = styled.section`
-    padding: 180px 0;
+    padding: 180px 0 0px;
     color: white;
 
     .textParent {
-        padding: 0 100px;
-        margin-bottom: 40px;
+        padding: 0 100px 40px;
 
         > span {
             font-size: 3em;
             font-weight: 700;
             position: sticky;
-            top: 400px;
+            top: calc(100vh / 2 - 40px);
         }
     }
 
@@ -35,7 +34,7 @@ const StyledSection = styled.section`
 const StyledWrap = styled.div`
     max-width: 90em;
     margin: 0 auto;
-    padding: 0 1.5em;
+    padding: 0 6em;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -46,10 +45,13 @@ const Section2 = () => {
         <StyledSection>
             <StyledWrap>
                 <div className="textParent" style={{height: "800px"}}>
-                    <span style={{opacity: "0.6"}}>The biggest barrier to making NFTs is not knowing where to begin.</span>
+                    <span style={{opacity: "0.6"}}>The biggest barrier to making NFTs is not knowing where to start.</span>
                 </div>
                 <div className="textParent" style={{height: "600px"}}>
                     <span>We take care of the entire process: designing, minting, and keeping track of your tokens—all in one centralized place.</span>
+                </div>
+                <div className="textParent" style={{height: "600px"}}>
+                    <span>That means less outsourcing, lower costs, and a hassle-free experience for you.</span>
                 </div>
                 <div className="textParent">
                     <span id="last">Here's how it works:</span>

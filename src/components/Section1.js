@@ -57,7 +57,7 @@ const Card = styled.div`
 
 const Section1 = () => {
     return (
-        <StyledSection style={{paddingTop: "50px"}} id="why-nfts">
+        <StyledSection style={{paddingTop: "100px"}} id="why-nfts">
             <StyledWrap>
                 <h2>Why NFTs?</h2>
                 <CardContainer>

@@ -7,7 +7,7 @@ const HeroSection = styled.section`
 const StyledWrap = styled.div`
     max-width: 90em;
     margin: 0 auto;
-    padding: 0 1.5em;
+    padding: 0 6em;
     display: flex;
     align-items: center;
     height: 100%
@@ -15,7 +15,7 @@ const StyledWrap = styled.div`
 const HeroContainer = styled.div`
     display: flex;
     color: white;
-    gap: 70px;
+    gap: 40px;
 
     #hero-left {
         flex: 3;
@@ -53,7 +53,7 @@ const StyledButton = styled.a`
     text-decoration: none;
     color: white;
     background: linear-gradient(45deg,#5105e7,#3278d1);
-    font-weight: 300;
+    font-weight: 500;
 
     &:hover {
         opacity: 0.6;
