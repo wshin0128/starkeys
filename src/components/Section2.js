@@ -68,7 +68,7 @@ const Section2 = () => {
                     <span style={{opacity: "0.6"}}>The biggest barrier to making NFTs is not knowing where to start.</span>
                 </div>
                 <div className="textParent" style={{height: "600px"}}>
-                    <span>We take care of the entire process: designing, minting, and keeping track of your tokens—all in one centralized place.</span>
+                    <span>We take care of the entire process: designing, minting, and keeping track of your sales—all in one place.</span>
                 </div>
                 <div className="textParent" style={{height: "600px"}}>
                     <span>That means less outsourcing, lower costs, and a hassle-free experience for you.</span>
