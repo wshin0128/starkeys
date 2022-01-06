@@ -6,13 +6,25 @@ const StyledSection = styled.section`
     color: white;
 
     .textParent {
-        padding: 0 100px 40px;
+        padding: 0 0 40px;
 
         > span {
-            font-size: 3em;
+            font-size: 1.8em;
             font-weight: 700;
             position: sticky;
             top: calc(100vh / 2 - 40px);
+
+            @media (min-width: 1100px) {
+                font-size: 3em;
+            }
+        }
+
+        @media (min-width: 700px) {
+            padding: 0 10px 40px;
+        }
+
+        @media (min-width: 1100px) {
+            padding: 0 40px 40px;
         }
     }
 
@@ -34,10 +46,18 @@ const StyledSection = styled.section`
 const StyledWrap = styled.div`
     max-width: 90em;
     margin: 0 auto;
-    padding: 0 6em;
+    padding: 0 2em;
     display: flex;
     flex-direction: column;
     height: 100%;
+
+    @media (min-width: 700px) {
+        padding: 0 4em;
+    }
+
+    @media (min-width: 1100px) {
+        padding: 0 6em;
+    }
 `
 
 const Section2 = () => {

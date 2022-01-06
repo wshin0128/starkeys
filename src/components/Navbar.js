@@ -4,9 +4,17 @@ import styled from "styled-components"
 const NavbarWrap = styled.div`
     max-width: 90em;
     margin: 0 auto;
-    padding: 0 6em;
+    padding: 0 2em;
     display: flex;
     align-items: center;
+
+    @media (min-width: 700px) {
+        padding: 0 4em;
+    }
+
+    @media (min-width: 1100px) {
+        padding: 0 6em;
+    }
 `
 
 const StyledNavbar = styled.div`
@@ -15,7 +23,11 @@ const StyledNavbar = styled.div`
     position: sticky;
     top: 0;
     z-index: 1;
-    background: linear-gradient(135deg,black,#100b28);
+    background: rgba(0,0,0,0.8);
+
+    @media (min-width: 700px) {
+\        background: linear-gradient(135deg,black,#100b28);
+    }
 
     h1 {
         user-select: none;
@@ -25,10 +37,14 @@ const StyledNavbar = styled.div`
     }
     a {
         font-size: 1.2em;
-        display: inline-block;
+        display: none;
         margin-left: 40px;
         text-decoration: none;
         color: white;
+
+        @media (min-width: 700px) {
+            display: inline-block;
+        }
     }
     #page-1 {
         margin-left: auto;

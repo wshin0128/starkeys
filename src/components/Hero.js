@@ -2,15 +2,27 @@ import * as React from "react"
 import styled from "styled-components"
 
 const HeroSection = styled.section`
-    height: calc(100vh - 97px);
+    height: 460px;
+
+    @media (min-width: 1100px) {
+        height: calc(100vh - 97px);
+    }
 `
 const StyledWrap = styled.div`
     max-width: 90em;
     margin: 0 auto;
-    padding: 0 6em;
+    padding: 0 2em;
     display: flex;
     align-items: center;
-    height: 100%
+    height: 100%;
+
+    @media (min-width: 700px) {
+        padding: 0 4em;
+    }
+
+    @media (min-width: 1100px) {
+        padding: 0 6em;
+    }
 `
 const HeroContainer = styled.div`
     display: flex;
@@ -26,29 +38,47 @@ const HeroContainer = styled.div`
     }
     #hero-right {
         flex: 2;
+        display: none;
+
+        @media (min-width: 1100px) {
+            display: block;
+        }
     }
     h2 {
-        font-size: 5em;
+        font-size: 3em;
         margin: 0 0 0.4em;
-        font-weight: 500;
+        font-weight: 700;
+
+        @media (min-width: 700px) {
+            font-size: 4em;
+        }
+
+        @media (min-width: 1100px) {
+            font-size: 5em;
+            font-weight: 500;
+        }
 
         span {
-            background-color: #9350ff;
-            background-image: linear-gradient(45deg,#4095ff,#9350ff);
-            background-size: 100%;
-            background-repeat: repeat;
+            color: #4095ff;
 
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; 
-            -moz-background-clip: text;
-            -moz-text-fill-color: transparent;
+            @media (min-width: 700px) {
+                background-color: #4095ff;
+                background-image: linear-gradient(45deg,#4095ff,#9350ff);
+                background-size: 100%;
+                background-repeat: repeat;
+
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+            }
         }
     }
 `
 const StyledButton = styled.a`
     display: inline-block;
-    padding: 20px 30px;
-    font-size: 1.4em;
+    padding: 12px 20px;
+    font-size: 1.2em;
     border-radius: 10px;
     text-decoration: none;
     color: white;
@@ -57,6 +87,11 @@ const StyledButton = styled.a`
 
     &:hover {
         opacity: 0.6;
+    }
+
+    @media (min-width: 700px) {
+        padding: 20px 30px;
+        font-size: 1.4em;
     }
 `
 const NFTcard = styled.div`

@@ -4,11 +4,19 @@ import styled from "styled-components"
 const StyledWrap = styled.div`
     max-width: 90em;
     margin: 0 auto;
-    padding: 0 6em;
+    padding: 0 2em;
     display: flex;
     color: white;
     gap: 60px;
     align-items: flex-start;
+
+    @media (min-width: 700px) {
+        padding: 0 4em;
+    }
+
+    @media (min-width: 1100px) {
+        padding: 0 6em;
+    }
 `
 
 const StyledFooter = styled.div`
@@ -43,7 +51,7 @@ const SiteMap = styled.div`
     }
 `
 const StyledButton = styled.a`
-    display: inline-block;
+    display: none;
     padding: 12px 18px;
     font-size: 1em;
     border-radius: 10px;
@@ -55,6 +63,10 @@ const StyledButton = styled.a`
 
     &:hover {
         opacity: 0.4;
+    }
+
+    @media (min-width: 700px) {
+        display: inline-block;
     }
 `
 

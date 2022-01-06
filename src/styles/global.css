@@ -4,4 +4,8 @@ body {
   background: linear-gradient(135deg, black, #19113c);
   background-attachment: fixed;
   background-color: black;
+
+  @media (min-width: 700px) {
+    background: linear-gradient(135deg, black, #19113c);
+  }
 }
